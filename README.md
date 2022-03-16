@@ -1,4 +1,4 @@
-# Gnome Ebook Readers - Docker mod for calibre
+# Python PyQt5 WebENgine - Docker mod for calibre
 
 This mod fixes missing PyQt5.QtWebEngineCore for ebook-viewer by installing python-pyqt5-webengine, to be installed/updated during container start.
 
