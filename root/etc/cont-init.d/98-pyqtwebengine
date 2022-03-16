@@ -1,4 +1,0 @@
-#!/usr/bin/with-contenv bash
-
-pacman -Sy --noconfirm --overwrite /usr/share/qt/qsci/api/python/PyQtWebEngine.api python-pyqt5-webengine
-
