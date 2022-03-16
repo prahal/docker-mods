@@ -3,7 +3,7 @@ name: Build Image
 on: [push, pull_request, workflow_dispatch]
 
 env:
-  ENDPOINT: "prahal/mods" #don't modify
+  ENDPOINT: "abws/mods" #don't modify
   BASEIMAGE: "calibre" #replace
   MODNAME: "readers" #replace
 
