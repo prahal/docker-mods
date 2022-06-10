@@ -5,7 +5,7 @@ on: [push, pull_request, workflow_dispatch]
 env:
   ENDPOINT: "abws/mods" #don't modify
   BASEIMAGE: "calibre" #replace
-  MODNAME: "openbox-log" #replace
+  MODNAME: "log-openbox" #replace
 
 jobs:
   build:
