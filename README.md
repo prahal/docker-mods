@@ -1,7 +1,7 @@
-# Upgrade ICU library - Docker mod for calibre
+# Reenable stdout and stderr out of openbox-session - Docker mod for calibre
 
-This mod installs icu and freerdp to be installed/updated during container start.
+This mod reenable the stdout and stderr iout of openbox-session during container start.
 
-In calibre docker arguments, set an environment variable 'DOCKER_MODS=abws/mods:calibre-fixicu'
+In calibre docker arguments, set an environment variable 'DOCKER_MODS=abws/mods:calibre-openbox-log'
 
-If adding multiple mods, enter them in an array separated by `|`, such as `DOCKER_MODS=abws/mods:calibre-fixicu|linuxserver/mods:calibre-mod2`
+If adding multiple mods, enter them in an array separated by `|`, such as `DOCKER_MODS=abws/mods:calibre-openbox-log|linuxserver/mods:calibre-mod2`
