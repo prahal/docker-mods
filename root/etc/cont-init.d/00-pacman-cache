@@ -1,3 +1,3 @@
 #!/usr/bin/with-contenv bash
 
-echo 'Server = http://pacman-cache.prahal.homelinux.net/$repo/os/$arch' > /etc/pacman.d/mirrorlist
+echo 'Server = http://pacman-cache.prahal.homelinux.net/$arch/$repo' > /etc/pacman.d/mirrorlist
