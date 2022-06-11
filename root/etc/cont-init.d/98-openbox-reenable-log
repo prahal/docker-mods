@@ -1,3 +1,0 @@
-#!/usr/bin/with-contenv bash
-
-/sbin/sed -i -e 's@\(/usr/bin/openbox-session\).*@\1@' /config/startwm.sh
