@@ -1,4 +1,4 @@
 #!/usr/bin/with-contenv bash
 
-pacman -Sy --noconfirm nautilus
+apt-get install -y nautilus
 
