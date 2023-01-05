@@ -1,0 +1,3 @@
+#!/usr/bin/with-contenv bash
+
+sudo add-apt-repository ppa:apandada1/foliate -y
