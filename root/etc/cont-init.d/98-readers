@@ -1,4 +1,3 @@
 #!/usr/bin/with-contenv bash
 
-pacman -Sy --noconfirm --needed evince foliate epiphany
-
+apt-get install -y evince foliate epiphany-browser
