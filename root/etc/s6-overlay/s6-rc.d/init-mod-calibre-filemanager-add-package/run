@@ -1,0 +1,12 @@
+#!/usr/bin/with-contenv bash
+
+if [ -d /filemanager ]; then
+    echo "**** Installing/updating filemanager debs ****"
+    dpkg -i /filemanager/archives/*.deb
+    rm -rf /filemanager
+else
+    echo "**** filemanager already installed ****"
+fi
+
+
+

@@ -1,5 +1,0 @@
-#!/usr/bin/with-contenv bash
-
-export DEBIAN_FRONTEND="noninteractive"
-apt-get install -y nautilus
-
