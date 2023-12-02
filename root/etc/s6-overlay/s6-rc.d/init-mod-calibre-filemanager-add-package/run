@@ -1,11 +1,14 @@
 #!/usr/bin/with-contenv bash
 
-if [ -d /filemanager ]; then
-    echo "**** Installing/updating filemanager debs ****"
-    dpkg -i /filemanager/archives/*.deb
-    rm -rf /filemanager
+if ! dpkg -s nautilus >/dev/null 2>&1; then
+    PACKAGES="nautilus ${PACKAGES}"
+fi
+
+if [ -n "${PACKAGES}" ]; then
+    echo "${PACKAGES}" >> /mod-repo-packages-to-install.list
+    echo "**** Adding calibre filemanager application to package install list ****"
 else
-    echo "**** filemanager already installed ****"
+    echo "**** Calibre filemanager application already installed, skipping ****"
 fi
 
 
