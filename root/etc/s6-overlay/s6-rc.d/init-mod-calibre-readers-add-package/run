@@ -1,0 +1,24 @@
+#!/usr/bin/with-contenv bash
+
+if ! dpkg -s xdg-utils >/dev/null 2>&1; then
+    PACKAGES="xdg-utils ${PACKAGES}"
+fi
+if ! dpkg -s evince >/dev/null 2>&1; then
+    PACKAGES="evince ${PACKAGES}"
+fi
+if ! dpkg -s foliate >/dev/null 2>&1; then
+    PACKAGES="foliate ${PACKAGES}"
+fi
+if ! dpkg -s epiphany-browser >/dev/null 2>&1; then
+    PACKAGES="epiphany-browser ${PACKAGES}"
+fi
+
+if [ -n "${PACKAGES}" ]; then
+    add-apt-repository ppa:apandada1/foliate -y
+    echo "${PACKAGES}" >> /mod-repo-packages-to-install.list
+    echo "**** Adding calibre readers applications to package install list ****"
+else
+    echo "**** Calibre readers applications already installed, skipping ****"
+fi
+
+
